@@ -5,10 +5,8 @@
 
 function removeEntry(obj, itemName) {
   let copy = { ...obj };
-  for (let item in obj) {
-    if (item === itemName) {
-      delete copy[item];
-    }
-  }
+
+  delete copy[item];
+
   return copy;
 }
